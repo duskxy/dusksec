@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container">
+<div class="row" style="margin-top: 300px;">
+<div class="col-md-6 offset-md-3">
+
+<form method="post" onsubmit="return check(this)">
+<div class="input-group">
+ <div class="input-group-prepend">
+  <select name="seatype" class="form-control" style="width: auto;">
+   <option value="1">域名</option>
+   <option value="2">目录</option>
+  </select>
+ </div>
+<input type="text" class="form-control" name="keyword" placeholder="搜索">
+<span class="input-group-append">
+<button class="btn btn-primary" type="submit">嗖</button>
+</span>
+{% csrf_token %}
+</div>
+</form>
+
+</div>
+</div>
+</div>
+{% endblock %}
+{% block js %}
+<script>
+function check(from){
+var kw = from.keyword.value
+if(kw == ''){
+    swal("域名不能为空");
+    return false;
+}
+var p = /^\w+\.\w{2,4}$/;
+if(!p.test(kw)){
+    swal("域名输入不正确");
+    return false;
+}
+return true;
+}
+</script>
+{% endblock %}
