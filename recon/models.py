@@ -10,4 +10,4 @@ class Suser(AbstractUser):
 
 
 class Surl(models.Model):
-    pass
+    url = models.URLField(max_length=200)

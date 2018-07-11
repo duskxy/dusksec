@@ -16,14 +16,14 @@
  </div>
 <input type="text" class="form-control" name="keyword" placeholder="搜索">
 <span class="input-group-append">
-<button class="btn btn-primary" type="submit">嗖</button>
+<button class="btn btn-primary" type="submit" id="sub">嗖</button>
 </span>
 {% csrf_token %}
 </div>
 </form>
-
 </div>
 </div>
+     <div class="col-md-6 offset-md-3"><p class="text-center">{{ dotext }}</p></div>
 </div>
 {% endblock %}
 {% block js %}
@@ -41,5 +41,13 @@ if(!p.test(kw)){
 }
 return true;
 }
+
+$(#sub).onclick(function(this)){
+     consloe.log(this.keyword.val());
+
+
+}
+
+
 </script>
 {% endblock %}
