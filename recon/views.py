@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.contrib.auth.decorators import login_required
+from dwebsocket.decorators import accept_websocket,require_websocket
 
 import re
 import sublist3r
@@ -28,8 +29,9 @@ def index(request):
             p = subprocess.Popen(tools+"/Sublist3r/sublist3r.py -d {}".format(ky),stdout=subprocess.PIPE,shell=True)
             idtext = p.stdout.read().strip()
             ic = re.findall("[0-9a-z]{5}\."+ky,str(idtext))
+            icq = "\r\n".join(ic)
             print(ic[0])
-    return render(request,"search.html",{"dotext":ic})
+    return render(request,"search.html",{"dotext":icq})
 
 
 

@@ -70,6 +70,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'dusksec.wsgi.application'
+MIDDLEWARE_CLASSES = 'django_websocket.middleware.WebSocketMiddleware'
 
 
 # Database

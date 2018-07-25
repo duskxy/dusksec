@@ -6,7 +6,7 @@
 <div class="row" style="margin-top: 300px;">
 <div class="col-md-6 offset-md-3">
 
-<form method="post" onsubmit="return check(this)">
+<form method="post" name="recon" id="recon">
 <div class="input-group">
  <div class="input-group-prepend">
   <select name="seatype" class="form-control" style="width: auto;">
@@ -14,9 +14,9 @@
    <option value="2">目录</option>
   </select>
  </div>
-<input type="text" class="form-control" name="keyword" placeholder="搜索">
+<input type="text" class="form-control" name="keyword" id="keyword" placeholder="搜索">
 <span class="input-group-append">
-<button class="btn btn-primary" type="submit" id="sub">嗖</button>
+<button class="btn btn-primary" type="button" id="sub">嗖</button>
 </span>
 {% csrf_token %}
 </div>
@@ -28,25 +28,23 @@
 {% endblock %}
 {% block js %}
 <script>
-function check(from){
-var kw = from.keyword.value
-if(kw == ''){
-    swal("域名不能为空");
-    return false;
-}
-var p = /^\w+\.\w{2,4}$/;
-if(!p.test(kw)){
-    swal("域名输入不正确");
-    return false;
-}
-return true;
-}
 
-$(#sub).onclick(function(this)){
-     consloe.log(this.keyword.val());
+$("#sub").click(function(){
+     console.log(document.getElementById("keyword").value);
+     var kw = document.getElementById("keyword").value; 
+     var p = /^\w+\.\w{2,4}$/;
+     if(kw == ''){
+        swal("域名不能为空")
 
+     }
+     else if(!p.test(kw)){
+        swal("域名输入不正确")
+     }
+     else {
+     document.getElementById("recon").submit()
+     }
 
-}
+})
 
 
 </script>
