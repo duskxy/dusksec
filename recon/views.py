@@ -22,6 +22,7 @@ def login(request):
 def index(request):
     idtext = ""
     ic = ""
+    icq = ""
     if request.method == 'POST':
         ky = request.POST.get('keyword')
         ty = request.POST.get('seatype')
@@ -30,7 +31,6 @@ def index(request):
             idtext = p.stdout.read().strip()
             ic = re.findall("[0-9a-z]{5}\."+ky,str(idtext))
             icq = "\r\n".join(ic)
-            print(ic[0])
     return render(request,"search.html",{"dotext":icq})
 
 

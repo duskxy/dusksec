@@ -11,3 +11,7 @@ class Suser(AbstractUser):
 
 class Surl(models.Model):
     url = models.URLField(max_length=200)
+
+class Sudata(models.Model):
+    uid = models.ForeignKey(Susl)
+    uda = models.URLField('url')
