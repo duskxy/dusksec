@@ -10,8 +10,8 @@ class Suser(AbstractUser):
 
 
 class Surl(models.Model):
-    url = models.URLField(max_length=200)
+    url = models.URLField('查询域名',max_length=200)
 
 class Sudata(models.Model):
-    uid = models.ForeignKey(Susl)
-    uda = models.URLField('url')
+    uid = models.ForeignKey(Surl,verbose_name='域名',blank=True,null=True,on_delete=models.SET_NULL)
+    uda = models.URLField('子域名','url')

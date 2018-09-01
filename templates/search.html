@@ -41,7 +41,17 @@ $("#sub").click(function(){
         swal("域名输入不正确")
      }
      else {
-     document.getElementById("recon").submit()
+         console.log("test")
+         $.ajax({
+             url: "{% url 'domain' %}",
+             timeout: 10000, 
+             type: 'POST',
+             data: $('#recon').serialize(),
+             success: function(ret){
+                 console.log(ret)
+             }
+
+       })
      }
 
 })

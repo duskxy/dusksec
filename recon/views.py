@@ -13,7 +13,7 @@ import subprocess
 
 # Create your views here.
 ####### view ######
-tools = "/data/py/sec/dusksec/utils"
+tools = "/data/py/dusksec"
 
 def login(request):
     return render(request,"login.html")
@@ -27,11 +27,13 @@ def index(request):
         ky = request.POST.get('keyword')
         ty = request.POST.get('seatype')
         if ty == "1":
-            p = subprocess.Popen(tools+"/Sublist3r/sublist3r.py -d {}".format(ky),stdout=subprocess.PIPE,shell=True)
-            idtext = p.stdout.read().strip()
-            ic = re.findall("[0-9a-z]{5}\."+ky,str(idtext))
-            icq = "\r\n".join(ic)
-    return render(request,"search.html",{"dotext":icq})
+            p = subprocess.Popen(tools+"/utils/Sublist3r/sublist3r.py -d {} -o"+ tools+"common/{}.txt".format(ky,ky),stdout=subprocess.PIPE,shell=True)
+            out,err = p.communicate()
+            if p.returncode != 0:
+                pass
+                    
+    return render(request,"search.html")
 
-
-
+def domain(request):
+    if request.method == "POST":
+        print(request.POST)
