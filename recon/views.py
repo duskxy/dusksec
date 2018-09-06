@@ -6,6 +6,7 @@ from dwebsocket.decorators import accept_websocket,require_websocket
 import re
 import sublist3r
 import subprocess
+import json
 
 ####### func ######
 
@@ -20,20 +21,24 @@ def login(request):
 
 
 def index(request):
-    idtext = ""
-    ic = ""
-    icq = ""
-    if request.method == 'POST':
-        ky = request.POST.get('keyword')
-        ty = request.POST.get('seatype')
-        if ty == "1":
-            p = subprocess.Popen(tools+"/utils/Sublist3r/sublist3r.py -d {} -o"+ tools+"common/{}.txt".format(ky,ky),stdout=subprocess.PIPE,shell=True)
-            out,err = p.communicate()
-            if p.returncode != 0:
-                pass
-                    
     return render(request,"search.html")
 
 def domain(request):
     if request.method == "POST":
-        print(request.POST)
+        type = request.POST.get("seatype")
+        udomain = request.POST.get("keyword")
+        sdata = {'status':0,'data':[]}
+        if type == "1":
+            result = subprocess.Popen(tools + "/utils/Sublist3r/sublist3r.py -d {} ".format(udomain) + "-o " + tools + "/common/{}.txt".format(udomain),stdout=subprocess.PIPE,stderr=subprocess.PIPE,shell=True)
+        while 1:
+            out = result.stdout.readline().decode("utf-8")
+            if out == '':
+                with open(tools + "/common/{}.txt".format(udomain),"r") as ff:
+                    for i in ff.readlines():
+                        ii = i.strip()
+                        sdata["data"].append(ii)
+                break 
+            print(out.strip())
+        sd = json.dumps(sdata)
+        print(sd)
+        return HttpResponse(sd)     

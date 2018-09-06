@@ -6,7 +6,7 @@
 <div class="row" style="margin-top: 300px;">
 <div class="col-md-6 offset-md-3">
 
-<form method="post" name="recon" id="recon">
+<form method="post" onsubmit="return false" name="recon" id="recon">
 <div class="input-group">
  <div class="input-group-prepend">
   <select name="seatype" class="form-control" style="width: auto;">
@@ -23,7 +23,7 @@
 </form>
 </div>
 </div>
-     <div class="col-md-6 offset-md-3"><p class="text-center">{{ dotext }}</p></div>
+     <div class="col-md-6 offset-md-3"><p class="text-center dtxt"></p></div>
 </div>
 {% endblock %}
 {% block js %}
@@ -31,8 +31,9 @@
 
 $("#sub").click(function(){
      console.log(document.getElementById("keyword").value);
+     $(".dtxt").html("")
      var kw = document.getElementById("keyword").value; 
-     var p = /^\w+\.\w{2,4}$/;
+     var p = /^\w+(\.\w{2,4}){1,2}$/;
      if(kw == ''){
         swal("域名不能为空")
 
@@ -44,11 +45,13 @@ $("#sub").click(function(){
          console.log("test")
          $.ajax({
              url: "{% url 'domain' %}",
-             timeout: 10000, 
              type: 'POST',
              data: $('#recon').serialize(),
              success: function(ret){
-                 console.log(ret)
+                 v = JSON.parse(ret);
+                 for(var i=0;i < v["data"].length;i++){
+                      $(".dtxt").append(v["data"][i]);
+                   }
              }
 
        })
