@@ -1,7 +1,8 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.http import HttpResponse,JsonResponse
 from django.contrib.auth.decorators import login_required
 from dwebsocket.decorators import accept_websocket,require_websocket
+from .models import Surl,Sudata
 
 import re
 import sublist3r
@@ -33,12 +34,18 @@ def domain(request):
         while 1:
             out = result.stdout.readline().decode("utf-8")
             if out == '':
+                su = Surl(url=udomain)
+                su.save()
                 with open(tools + "/common/{}.txt".format(udomain),"r") as ff:
                     for i in ff.readlines():
                         ii = i.strip()
+                        sd = Sudata(url=ii,uid_id=su.id)
+                        sd.save()
                         sdata["data"].append(ii)
                 break 
             print(out.strip())
         sd = json.dumps(sdata)
-        print(sd)
         return HttpResponse(sd)     
+
+def dork(request):
+    return HttpResponse("dork")

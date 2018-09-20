@@ -9,7 +9,7 @@
 <form method="post" onsubmit="return false" name="recon" id="recon">
 <div class="input-group">
  <div class="input-group-prepend">
-  <select name="seatype" class="form-control" style="width: auto;">
+  <select name="seatype" class="form-control">
    <option value="1">域名</option>
    <option value="2">目录</option>
   </select>
@@ -23,7 +23,7 @@
 </form>
 </div>
 </div>
-     <div class="col-md-6 offset-md-3"><p class="text-center dtxt"></p></div>
+     <div class="col-md-6 offset-md-3" style="margin-top:30px"><p class="text-center dtxt"></p></div>
 </div>
 {% endblock %}
 {% block js %}
@@ -44,14 +44,21 @@ $("#sub").click(function(){
      else {
          console.log("test")
          $.ajax({
-             url: "{% url 'domain' %}",
+             url: "{% url 'recon:domain' %}",
              type: 'POST',
              data: $('#recon').serialize(),
+             beforeSend:function(){
+                $(".dtxt").html('<span>后台查询中...</span>');
+             },
              success: function(ret){
+                 toastr.success("查询完成!");
                  v = JSON.parse(ret);
+                 var hre = "<p>";
                  for(var i=0;i < v["data"].length;i++){
-                      $(".dtxt").append(v["data"][i]);
-                   }
+                      hre += v["data"][i] + "</p><hr />";
+                   };
+                 $(".dtxt").html(hre)
+                
              }
 
        })
