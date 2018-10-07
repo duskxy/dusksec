@@ -6,7 +6,7 @@
 <div class="row" style="margin-top: 300px;">
 <div class="col-md-6 offset-md-3">
 
-<form method="post" onsubmit="return false" name="recon" id="recon">
+<form method="post" name="recon" id="recon">
 <div class="input-group">
  <div class="input-group-prepend">
   <select name="seatype" class="form-control">
@@ -35,11 +35,13 @@ $("#sub").click(function(){
      var kw = document.getElementById("keyword").value; 
      var p = /^\w+(\.\w{2,4}){1,2}$/;
      if(kw == ''){
-        swal("域名不能为空")
-
+        swal("域名不能为空");
+        return false;
      }
      else if(!p.test(kw)){
-        swal("域名输入不正确")
+        swal("域名输入不正确");
+        $('#sub').reset();
+        return false;
      }
      else {
          console.log("test")
