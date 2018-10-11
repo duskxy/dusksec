@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django_celery_results',
     'recon',
     'src',
+    'pure_pagination',
 ]
 
 MIDDLEWARE = [
@@ -74,6 +75,8 @@ TEMPLATES = [
 WSGI_APPLICATION = 'dusksec.wsgi.application'
 MIDDLEWARE_CLASSES = 'django_websocket.middleware.WebSocketMiddleware'
 
+CELERY_BROKER_URL = 'redis://:a05370385a@localhost:6379/1'
+CELERY_RESULT_BACKEND = 'redis://:a05370385a@localhost:6379/1'
 
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
