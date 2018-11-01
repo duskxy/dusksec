@@ -10,8 +10,11 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.0/ref/settings/
 """
 
+from django.urls import reverse_lazy
 import os
 import sys
+from .celery import app
+from celery.task.schedules import crontab
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -37,10 +40,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django_celery_beat',
-    'django_celery_results',
     'recon',
     'src',
+    'django_celery_beat',
+    'django_celery_results',
     'pure_pagination',
 ]
 
@@ -75,8 +78,10 @@ TEMPLATES = [
 WSGI_APPLICATION = 'dusksec.wsgi.application'
 MIDDLEWARE_CLASSES = 'django_websocket.middleware.WebSocketMiddleware'
 
+LANGUAGE_CODE = 'zh-Hans'
 CELERY_BROKER_URL = 'redis://:a05370385a@localhost:6379/1'
 CELERY_RESULT_BACKEND = 'redis://:a05370385a@localhost:6379/1'
+CELERY_TIMEZONE  = 'Asia/Shanghai'
 
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
@@ -115,7 +120,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/2.0/topics/i18n/
 
-LANGUAGE_CODE = 'zh-hans'
+#LANGUAGE_CODE = 'zh-hans'
 
 TIME_ZONE = 'Asia/Shanghai'
 
@@ -126,6 +131,8 @@ USE_L10N = True
 USE_TZ = True
 
 AUTH_USER_MODEL = 'recon.Suser'
+LOGIN_URL = reverse_lazy('recon:login')
+LOGIN_REDIRECT_URL = reverse_lazy('recon:index')
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
@@ -134,3 +141,14 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR,"static"),
 )
+
+
+CELERY_BEAT_SCHEDULE = {
+    'verurl': {
+        'task': 'src.tasks.verurl',
+        'schedule': crontab(minute=15,hour=21)
+
+ }
+
+
+}

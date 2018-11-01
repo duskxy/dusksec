@@ -7,3 +7,14 @@
     color:black;
 
 }
+
+.page-item.active .page-link {
+    background: #717171;
+    border-color: #717171;
+}
+
+.pagination li:hover a, .pageturn .active a {
+    background: #717171;
+    color: #fff;
+    border-color: #eaeaea;
+}

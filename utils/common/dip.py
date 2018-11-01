@@ -34,9 +34,9 @@ class scrim(object):
                     print("No match")
 
 
-   # def __exit__(self):
-   #     self.cur.close()
-   #     self.conn.close()
+    def __del__(self):
+        self.cur.close()
+        self.conn.close()
 
 if __name__ == "__main__":
     u = scrim()

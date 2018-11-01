@@ -1,4 +1,5 @@
 {% load static %}
+{% load temphelp %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -15,6 +16,9 @@
 <div class="container">
 <div class="row" style="margin-top: 200px;">
  <div class="col-md-6 offset-md-3">
+   {% if form.errors %}  
+    <div class="alert alert-danger"><button type="button" class="close" data-dismiss="alert">&times;</button>{{ form.errors | first_error }}</div>
+   {% endif %}
   <div class="card">
    <div class="card-header">
        <div class="shead" style="border-buttom: 1px dotted green !important;"> 
@@ -22,16 +26,14 @@
        </div>
    </div>
      <div class="card-body">
-      <form>
+      <form method="post">
+       {% for line in form %}
        <div class="form-group">
-        <label for="username">用户名:</label>
-        <input type="text" class="form-control">
+             {{ line | css:"form-control" | placeholder }}
        </div>
-       <div class="form-group">
-        <label for="password">密码:</label>
-        <input type="password" class="form-control">
-       </div>
+         {% endfor %}
         <button type="submit" class="btn btn-primary" value="登录">登录</button>
+      {% csrf_token %}
       </form>
      </div>
   </div>

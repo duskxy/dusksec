@@ -1,5 +1,7 @@
-from django.shortcuts import render
+from django.shortcuts import render,render_to_response
 from django.http import HttpResponse,JsonResponse
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.decorators import login_required
 from dwebsocket.decorators import accept_websocket,require_websocket
 from .models import Surl,Sudata
@@ -18,12 +20,17 @@ import json
 tools = "/data/py/dusksec"
 
 def login(request):
-    return render(request,"login.html")
+    if request.mothed == 'GET':
+        return render(request,"login.html")
+    elif request.methed == "POST":
+        u = request.POST.get('username')
+        p = request.POST.get('password')
 
 
+@login_required()
 def index(request):
     return render(request,"search.html")
-
+@login_required()
 def domain(request):
     if request.method == "POST":
         type = request.POST.get("seatype")
@@ -46,6 +53,6 @@ def domain(request):
             print(out.strip())
         sd = json.dumps(sdata)
         return HttpResponse(sd)     
-
-def dork(request):
-    return HttpResponse("dork")
+@login_required()
+def dnslog(request):
+    return render_to_response("dnslog.html")

@@ -3,6 +3,13 @@ from django.db import models
 # Create your models here.
 
 from django.db import models
+status_choices = (
+   (1,"正常"),
+   (2,"异常")
+
+)
+
+
 
 class Src(models.Model):
     company = models.CharField("src公司",max_length=20,unique=True) 
@@ -20,7 +27,7 @@ class asset(models.Model):
     suburl = models.CharField("子域名",max_length=100)
     ip = models.GenericIPAddressField("IP地址")
     url = models.ForeignKey(Src,verbose_name="主域名",on_delete=models.CASCADE)
-    
+    status = models.CharField("状态",max_length=10,default=1,choices=status_choices)
     class Meta:
         db_table = "asset"
         verbose_name = "src资产"
