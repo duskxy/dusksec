@@ -17,6 +17,7 @@ async def main(url):
 
 
 url = 'https://hackerone.com/directory?query=' + parse.quote('bounties%3Ayes&sort=published_at%3Adescending&page=1')
+print(url)
 headers = {
    'Host':'hackerone.com',
    'User-Agent':'user-agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36',

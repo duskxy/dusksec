@@ -55,6 +55,9 @@
     <script src="{% static 'js/toastr.min.js' %}"></script>
     <script src="{% static 'js/bootstrap-select.min.js' %}"></script>
     <script src="{% static 'js/defaults-zh_CN.min.js' %}"></script>
+    <script type="text/JavaScript">
+        $.ajaxSetup({headers: {"X-CSRFToken": '{{ csrf_token }}'}})
+    </script>
     {% block js%}
     {% endblock %}
   </body>
