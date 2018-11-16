@@ -4,7 +4,12 @@ import sys
 from urllib import parse
 import asyncio
 from pyppeteer.launcher import launch
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 
+# https://hackerone.com/directory?query=bounties%253Ayes%26sort%3Dpublished_at%253Adescending%26page%3D1
+
+'''
 async def main(url):
     brower = await launch({'headless': True,'args':['--no-sandbox'],})
     page = await brower.newPage()
@@ -30,3 +35,11 @@ headers = {
 #    sys.exit()
 eloop = asyncio.get_event_loop()
 eloop.run_until_complete(main(url))
+'''
+
+chrome_options = Options()
+chrome_options.add_argument('--headless')
+chrome_options.add_argument('--no-sandbox')
+driver = webdriver.Chrome(chrome_options=chrome_options,executable_path='/data/py/dusksec/utils/common/chromedriver')
+print(driver.get("https://www.baidu.com").title)
+
