@@ -61,7 +61,11 @@ $("#sub").click(function(){
                    };
                  $(".dtxt").html(hre)
                 
-             }
+             },
+            error: function(){
+                 toastr.error("后台查询异常");
+                 $(".dtxt").html("");
+                }
 
        })
      }
