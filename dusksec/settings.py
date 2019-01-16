@@ -15,10 +15,11 @@ import os
 import sys
 from .celery import app
 from celery.task.schedules import crontab
+from datetime import timedelta
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-sys.path.insert(1,os.path.join(BASE_DIR,"utils/Sublist3r"))
+sys.path.insert(1,os.path.join(BASE_DIR,"utils/extra/Sublist3r"))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
@@ -146,7 +147,7 @@ STATICFILES_DIRS = (
 CELERY_BEAT_SCHEDULE = {
     'verurl': {
         'task': 'src.tasks.verurl',
-        'schedule': crontab(minute=15,hour=21)
+        'schedule': crontab(minute=00,hour=1)
 
  }
 

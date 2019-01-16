@@ -11,7 +11,7 @@ urlpatterns = [
     url(r'^recon/$',views.index,name="index"),
     url(r'^logout/$',logout_then_login,name="logout"),
     url(r'^domain/$',views.domain,name='domain'),
-    url(r'^dnslog/$',views.dnslog,name='dnslog'),
+    url(r'^search/$',views.dsou,name='dsou'),
 
 
 

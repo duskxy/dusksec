@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container">
+<div class="row" style="margin-top: 300px;">
+<div class="col-md-6 offset-md-3">
+<form method="post" name="recon" id="recon">
+<div class="input-group">
+ <div class="input-group-prepend">
+  <select name="seatype" class="form-control">
+   <option value="1">百度</option>
+   <option value="2">shodan</option>
+  </select>
+ </div>
+<input type="text" class="form-control" name="keyword" id="keyword" placeholder="搜索">
+<span class="input-group-append">
+<button class="btn btn-primary" type="button" id="sub">嗖</button>
+</span>
+{% csrf_token %}
+</div>
+</form>
+</div>
+</div>
+     <div class="col-md-6 offset-md-3" style="margin-top:30px;"><p class="text-center dtxt"></p></div>
+</div>
+{% endblock %}
+
+{% block js %}
+<script>
+    $('#sub').click(function(){
+        $.ajax({
+            url: '{% url 'recon:dsou' %}', 
+            type: 'POST',
+            data: $('#recon').serialize(),
+            dataType: 'json',
+            beforeSend:function(){
+                $('.dtxt').text("后台查询中");
+
+            },
+            success: function(ret){
+               var db = "<p>";
+               toastr.success("查询完成!"); 
+               for(var i=0;i<ret['data'].length;i++){
+                   db += ret['data'][i] + "</p><hr />"
+                            };   
+               $('.dtxt').html(db); 
+                                  },
+           error: function(){
+               toastr.error("查询异常");
+
+                              }
+
+              }) 
+
+                  }
+                 )
+
+
+</script>
+{% endblock %}

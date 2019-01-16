@@ -10,6 +10,9 @@ import re
 import sublist3r
 import subprocess
 import json
+from utils.tools import Ctools
+from utils.crawler.bddock import bdsou
+from django.views.decorators.csrf import csrf_exempt
 
 ####### func ######
 
@@ -35,24 +38,35 @@ def domain(request):
     if request.method == "POST":
         type = request.POST.get("seatype")
         udomain = request.POST.get("keyword")
-        sdata = {'status':0,'data':[]}
+        stat = request.POST.get('status')
+        print(stat)
+        sdata = {'status':0,'data':''}
+        hello = Ctools()
+        print(udomain)
         if type == "1":
-            result = subprocess.Popen(tools + "/utils/Sublist3r/sublist3r.py -d {} ".format(udomain) + "-o " + tools + "/common/{}.txt".format(udomain),stdout=subprocess.PIPE,stderr=subprocess.PIPE,shell=True)
-        while 1:
-            out = result.stdout.readline().decode("utf-8")
-            if out == '':
-                su = Surl(url=udomain)
-                su.save()
-                with open(tools + "/common/{}.txt".format(udomain),"r") as ff:
-                    for i in ff.readlines():
-                        ii = i.strip()
-                        sd = Sudata(url=ii,uid_id=su.id)
-                        sd.save()
-                        sdata["data"].append(ii)
-            break 
-            print(out.strip())
+            sdata['data'] = ''
+            doda = hello.domain(udomain,Surl,Sudata) 
+            sdata['data'] = doda
+        elif type == "2":
+            sdata['data'] = ''
+            ddoda = hello.dodir(udomain)
+            sdata['data'] = ddoda 
+        print(sdata)
         sd = json.dumps(sdata)
         return HttpResponse(sd)     
 @login_required()
-def dnslog(request):
-    return render_to_response("dnslog.html")
+@csrf_exempt
+def dsou(request):     
+    if request.method == "POST":
+        ddata = {'status':0,'data':''}
+        dtype = request.POST.get('seatype')
+        dudomain = request.POST.get('keyword')
+        print(dtype)
+        if dtype == "1":
+            v = bdsou(dudomain)
+            ddata['data'] = v
+        dd = json.dumps(ddata)
+        return HttpResponse(dd,content_type="application/json") 
+    return render_to_response("dsou.html")
+
+

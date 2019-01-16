@@ -12,6 +12,7 @@
     <link href="{% static 'css/toastr.min.css' %}" rel="stylesheet">
     <link rel="stylesheet" href="//at.alicdn.com/t/font_853610_5zzhxkyd2zg.css">
     <link href="{% static 'css/bootstrap-select.min.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-switch.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/all.css' %}" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'css/site.css' %}">
     <title>Hello, world!</title>
@@ -24,7 +25,7 @@
   <!-- Links -->
   <ul class="navbar-nav">
     <li class="nav-item">
-      <a class="nav-link" href="{% url "recon:dnslog" %}">DNSLOG</a>
+      <a class="nav-link" href="{% url 'recon:dsou' %}">搜索</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href={% url 'src:src' gs=1 %}>国内SRC</a>
@@ -55,6 +56,7 @@
     <script src="{% static 'js/toastr.min.js' %}"></script>
     <script src="{% static 'js/bootstrap-select.min.js' %}"></script>
     <script src="{% static 'js/defaults-zh_CN.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap-switch.min.js' %}">
     <script type="text/JavaScript">
         $.ajaxSetup({headers: {"X-CSRFToken": '{{ csrf_token }}'}})
     </script>

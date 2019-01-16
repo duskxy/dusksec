@@ -5,13 +5,16 @@
 <div class="container">
 <div class="row" style="margin-top: 300px;">
 <div class="col-md-6 offset-md-3">
-
 <form method="post" name="recon" id="recon">
+<div class="input-group" style="margin-bottom:10px;margin-left:435px;">
+<a href="#" data-toggle="tooltip" title="仅查询或者入库开关"><input name="status" type="checkbox"></a>
+</div>
 <div class="input-group">
  <div class="input-group-prepend">
   <select name="seatype" class="form-control">
    <option value="1">域名</option>
    <option value="2">目录</option>
+   <option value="3">一键查询</option>
   </select>
  </div>
 <input type="text" class="form-control" name="keyword" id="keyword" placeholder="搜索">
@@ -23,17 +26,23 @@
 </form>
 </div>
 </div>
-     <div class="col-md-6 offset-md-3" style="margin-top:30px"><p class="text-center dtxt"></p></div>
+     <div class="col-md-6 offset-md-3" style="margin-top:30px;"><p class="text-center dtxt"></p></div>
 </div>
 {% endblock %}
 {% block js %}
 <script>
 
+
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip(); 
+})
+
+
 $("#sub").click(function(){
      console.log(document.getElementById("keyword").value);
      $(".dtxt").html("")
      var kw = document.getElementById("keyword").value; 
-     var p = /^\w+(\.\w{2,4}){1,2}$/;
+     var p = /^\w+(\.\w{2,}\d*?){1,4}$/;
      if(kw == ''){
         swal("域名不能为空");
         return false;
@@ -71,6 +80,23 @@ $("#sub").click(function(){
      }
 
 })
+
+
+$('[name="status"]').bootstrapSwitch({  
+	        onText:"入库",  
+	        offText:"查询",  
+	        onColor:"success",  
+	        offColor:"default",  
+	        size:"large",  
+    /*    onSwitchChange:function(event,state){  
+            if(state==true){  
+               alert('已打开');  
+            }else{  
+                alert('已关闭');  
+            }  
+        }  */
+ 
+   			 })
 
 
 </script>

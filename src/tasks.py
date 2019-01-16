@@ -14,8 +14,9 @@ def telver(ip,port):
 
 @shared_task
 def verurl():
-    url = asset.objects.all()[1:3]
+    url = asset.objects.all()
     c = (i for i in url)
     for d in c:
-        print(d.ip)
-       
+        v = d.ip.split(':')
+        if telver(v[0],v[1]) is False:
+            asset.objects.filter(ip=d.ip).update(status='2')
