@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8">
+        <title>Google Hacking - Generate URL</title>
+<style type="text/css">
+a {
+    color: #74b49b;
+
+ }
+
+a:hover {
+
+    color: #ff5733;
+
+}
+
+</style>
+</head>
+<body>
+        <div class="container">
+          <div class="row" style="margin-top: 300px;">
+             <div class="col-md-6 offset-md-3">
+               <div class="input-group mb-3">
+          
+                    <div class="input-group-prepend">
+                       <span class="input-group-text">URL:</span>
+                      </div>
+
+                   <input type="text" class="form-control" id="url" placeholder="site.com">
+                <span class="input-group-append">
+                <input class="input-group-text" type="submit" onclick="getURL()" value="Make">
+                </span>
+         </div>
+
+          <div class="col-md-6 offset-md-3">
+
+                <div id="content" style="padding-top: 50px;">
+                </div>
+           </div>
+        </div>
+        </div>
+          </div>
+     
+        <script type="text/javascript">
+                function getURL(){
+                        document.getElementById("content").innerHTML = "";
+                        var v = document.getElementById("url").value;
+                        var i = 0;
+                        var x = "";
+                        var hack = new Array(
+                                "https://www.google.com/search?q=site:" + v + "+intitle:index.of",
+                                "https://www.google.com/search?q=site:" + v + "+ext:xml+|+ext:conf+|+ext:cnf+|+ext:reg+|+ext:inf+|+ext:rdp+|+ext:cfg+|+ext:txt+|+ext:ora+|+ext:ini",
+                                "https://www.google.com/search?q=site:" + v + "+ext:sql+|+ext:dbf+|+ext:mdb",
+                                "https://www.google.com/search?q=site:" + v + "+ext:log",
+                                "https://www.google.com/search?q=site:" + v + "+ext:bkf+|+ext:bkp+|+ext:bak+|+ext:old+|+ext:backup",
+                                "https://www.google.com/search?q=site:" + v + "+inurl:login",
+                                "https://www.google.com/search?q=site:" + v + "+intext:%22sql+syntax+near%22+|+intext:%22syntax+error+has+occurred%22+|+intext:%22incorrect+syntax+near%22+|+intext:%22unexpected+end+of+SQL+command%22+|+intext:%22Warning:+mysql_connect()%22+|+intext:%22Warning:+mysql_query()%22+|+intext:%22Warning:+pg_connect()%22",
+                                "https://www.google.com/search?q=site:" + v + "+ext:doc+|+ext:docx+|+ext:odt+|+ext:pdf+|+ext:rtf+|+ext:sxw+|+ext:psw+|+ext:ppt+|+ext:pptx+|+ext:pps+|+ext:csv",
+                                "https://www.google.com/search?q=site:" + v + "+ext:php+intitle:phpinfo+%22published+by+the+PHP+Group%22"
+                        )
+                        var txt = new Array(
+                                "目录遍历漏洞",
+                                "配置文件泄露",
+                                "数据库文件泄露",
+                                "日志文件泄露",
+                                "备份和历史文件",
+                                "登录页面",
+                                "SQL错误",
+                                "公开文件信息",
+                                "phpinfo()"
+                        )
+
+                        while (i<9)
+                        {
+                                x = document.getElementById("content").innerHTML;
+                                document.getElementById("content").innerHTML = x + "<p class='text-center'><a href='" + hack[i] + "' target='__blank'>" + txt[i] + "</a></p>";
+                                i++;
+                        }
+                }
+        </script>
+</body>
+</html>
+{% endblock %}

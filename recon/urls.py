@@ -12,9 +12,7 @@ urlpatterns = [
     url(r'^logout/$',logout_then_login,name="logout"),
     url(r'^domain/$',views.domain,name='domain'),
     url(r'^search/$',views.dsou,name='dsou'),
-
-
-
+    url(r'ghack/$',views.ghack,name='ghack'),
 ]
 
 app_name = "recon"

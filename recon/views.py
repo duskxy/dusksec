@@ -68,5 +68,7 @@ def dsou(request):
         dd = json.dumps(ddata)
         return HttpResponse(dd,content_type="application/json") 
     return render_to_response("dsou.html")
-
+@login_required()
+def ghack(request):
+    return render_to_response('ghack.html')
 

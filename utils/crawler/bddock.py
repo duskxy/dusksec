@@ -16,7 +16,7 @@ def bdsou(url):
     print(bdurl + parse.quote(url))
     urlen = parse.quote(url)
     rrl = set()
-    for np in range(0,1000,10):
+    for np in range(0,10000,10):
         ret = requests.get(bdurl.format(urlen,np),headers=headers,timeout=5)
         hx = ret.content.decode("utf-8",'ignore')
         jx = etree.HTML(hx)

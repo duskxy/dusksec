@@ -818,3 +818,333 @@ User information: uid=0 euid=0 gid=0 egid=0
 [2019-01-14 01:00:00,092: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
 [2019-01-15 01:00:00,061: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
 [2019-01-16 01:00:00,000: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-01-16 16:06:22,722: INFO/ForkPoolWorker-2] Task src.tasks.verurl[ac72fe28-41f3-43eb-9992-a737f1c7c1df] succeeded in 539481.4228236019s: None
+[2019-01-16 16:06:22,739: INFO/MainProcess] Received task: src.tasks.verurl[8c0b80ab-9ad4-457d-83f8-94f0b6222128]  
+[2019-01-17 01:00:00,097: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-01-18 01:00:00,010: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-01-18 01:32:16,213: INFO/ForkPoolWorker-3] Task src.tasks.verurl[ac72fe28-41f3-43eb-9992-a737f1c7c1df] succeeded in 524703.7062131008s: None
+[2019-01-18 01:32:17,889: INFO/MainProcess] Received task: src.tasks.verurl[8c0b80ab-9ad4-457d-83f8-94f0b6222128]  
+[2019-01-19 01:00:00,091: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-01-20 01:00:00,089: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-01-21 01:00:00,091: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-01-22 01:00:00,081: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-01-22 10:58:56,327: INFO/ForkPoolWorker-2] Task src.tasks.verurl[ac72fe28-41f3-43eb-9992-a737f1c7c1df] succeeded in 499953.60297634825s: None
+[2019-01-22 10:58:56,414: INFO/MainProcess] Received task: src.tasks.verurl[8c0b80ab-9ad4-457d-83f8-94f0b6222128]  
+[2019-01-23 01:00:00,074: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-01-23 18:28:57,823: INFO/ForkPoolWorker-3] Task src.tasks.verurl[ac72fe28-41f3-43eb-9992-a737f1c7c1df] succeeded in 493001.6085935524s: None
+[2019-01-23 18:28:58,108: INFO/MainProcess] Received task: src.tasks.verurl[8c0b80ab-9ad4-457d-83f8-94f0b6222128]  
+[2019-01-24 01:00:00,075: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-01-25 01:00:00,060: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-01-26 01:00:00,092: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-01-27 01:00:00,091: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-01-28 01:00:00,082: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-01-28 03:59:31,878: INFO/ForkPoolWorker-2] Task src.tasks.verurl[ac72fe28-41f3-43eb-9992-a737f1c7c1df] succeeded in 493235.5490123611s: None
+[2019-01-28 03:59:31,971: INFO/MainProcess] Received task: src.tasks.verurl[8c0b80ab-9ad4-457d-83f8-94f0b6222128]  
+[2019-01-29 01:00:00,075: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-01-29 12:37:49,755: INFO/ForkPoolWorker-3] Task src.tasks.verurl[ac72fe28-41f3-43eb-9992-a737f1c7c1df] succeeded in 497331.92963934224s: None
+[2019-01-29 12:37:51,298: INFO/MainProcess] Received task: src.tasks.verurl[8c0b80ab-9ad4-457d-83f8-94f0b6222128]  
+[2019-01-30 01:00:00,074: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-01-31 01:00:00,075: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-02-01 01:00:00,090: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-02-02 01:00:00,052: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-02-03 01:00:00,090: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-02-04 00:25:12,819: INFO/ForkPoolWorker-2] Task src.tasks.verurl[ac72fe28-41f3-43eb-9992-a737f1c7c1df] succeeded in 591940.9395409469s: None
+[2019-02-04 00:25:13,050: INFO/MainProcess] Received task: src.tasks.verurl[8c0b80ab-9ad4-457d-83f8-94f0b6222128]  
+[2019-02-04 01:00:00,084: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-02-05 01:00:00,064: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-02-05 09:47:19,285: INFO/ForkPoolWorker-3] Task src.tasks.verurl[ac72fe28-41f3-43eb-9992-a737f1c7c1df] succeeded in 594569.5284137782s: None
+[2019-02-05 09:47:19,569: INFO/MainProcess] Received task: src.tasks.verurl[8c0b80ab-9ad4-457d-83f8-94f0b6222128]  
+[2019-02-06 01:00:00,083: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-02-07 01:00:00,083: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-02-08 01:00:00,084: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-02-09 01:00:00,084: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-02-10 01:00:00,073: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-02-11 01:00:00,091: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-02-12 01:00:00,051: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-02-12 09:12:22,774: INFO/ForkPoolWorker-2] Task src.tasks.verurl[ac72fe28-41f3-43eb-9992-a737f1c7c1df] succeeded in 722829.9530174723s: None
+[2019-02-12 09:12:23,339: INFO/MainProcess] Received task: src.tasks.verurl[8c0b80ab-9ad4-457d-83f8-94f0b6222128]  
+[2019-02-13 01:00:00,058: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-02-13 20:45:03,192: INFO/ForkPoolWorker-3] Task src.tasks.verurl[ac72fe28-41f3-43eb-9992-a737f1c7c1df] succeeded in 730663.9047144279s: None
+[2019-02-13 20:45:05,103: INFO/MainProcess] Received task: src.tasks.verurl[8c0b80ab-9ad4-457d-83f8-94f0b6222128]  
+[2019-02-14 01:00:00,067: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-02-15 01:00:00,059: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-02-16 01:00:00,087: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-02-17 01:00:00,082: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-02-18 01:00:00,069: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-02-19 01:00:00,059: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-02-20 01:00:00,091: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-02-20 18:41:01,743: INFO/ForkPoolWorker-2] Task src.tasks.verurl[ac72fe28-41f3-43eb-9992-a737f1c7c1df] succeeded in 725318.9670694899s: None
+[2019-02-20 18:41:02,219: INFO/MainProcess] Received task: src.tasks.verurl[8c0b80ab-9ad4-457d-83f8-94f0b6222128]  
+[2019-02-21 01:00:00,024: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-02-21 21:41:17,310: INFO/ForkPoolWorker-3] Task src.tasks.verurl[ac72fe28-41f3-43eb-9992-a737f1c7c1df] succeeded in 694574.1161582982s: None
+[2019-02-21 21:41:17,547: INFO/MainProcess] Received task: src.tasks.verurl[8c0b80ab-9ad4-457d-83f8-94f0b6222128]  
+[2019-02-22 01:00:00,071: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-02-23 01:00:00,000: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-02-24 01:00:00,062: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-02-25 01:00:00,029: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-02-26 01:00:00,012: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-02-27 01:00:00,091: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-02-27 05:29:02,263: INFO/ForkPoolWorker-2] Task src.tasks.verurl[ac72fe28-41f3-43eb-9992-a737f1c7c1df] succeeded in 557280.5168880215s: None
+[2019-02-27 05:29:02,389: INFO/MainProcess] Received task: src.tasks.verurl[8c0b80ab-9ad4-457d-83f8-94f0b6222128]  
+[2019-02-28 01:00:00,072: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-02-28 07:03:25,387: INFO/ForkPoolWorker-3] Task src.tasks.verurl[ac72fe28-41f3-43eb-9992-a737f1c7c1df] succeeded in 552128.0752300825s: None
+[2019-02-28 07:03:26,424: INFO/MainProcess] Received task: src.tasks.verurl[8c0b80ab-9ad4-457d-83f8-94f0b6222128]  
+[2019-03-01 01:00:00,067: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-03-02 01:00:00,058: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-03-03 01:00:00,087: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-03-04 01:00:00,071: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-03-05 01:00:00,073: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-03-05 12:01:53,230: INFO/ForkPoolWorker-2] Task src.tasks.verurl[ac72fe28-41f3-43eb-9992-a737f1c7c1df] succeeded in 541970.9649699964s: None
+[2019-03-05 12:01:53,640: INFO/MainProcess] Received task: src.tasks.verurl[8c0b80ab-9ad4-457d-83f8-94f0b6222128]  
+[2019-03-06 01:00:00,090: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-03-06 14:09:24,121: INFO/ForkPoolWorker-3] Task src.tasks.verurl[ac72fe28-41f3-43eb-9992-a737f1c7c1df] succeeded in 543958.7317853644s: None
+[2019-03-06 14:09:24,218: INFO/MainProcess] Received task: src.tasks.verurl[8c0b80ab-9ad4-457d-83f8-94f0b6222128]  
+[2019-03-07 01:00:00,071: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-03-08 01:00:00,071: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-03-09 01:00:00,088: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-03-10 01:00:00,037: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-03-11 01:00:00,058: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-03-11 16:37:34,609: INFO/ForkPoolWorker-2] Task src.tasks.verurl[ac72fe28-41f3-43eb-9992-a737f1c7c1df] succeeded in 534941.3776930189s: None
+[2019-03-11 16:37:35,024: INFO/MainProcess] Received task: src.tasks.verurl[8c0b80ab-9ad4-457d-83f8-94f0b6222128]  
+[2019-03-11 16:37:35,025: INFO/MainProcess] Received task: src.tasks.verurl[43891621-f02a-422c-b263-e1fb4d55f0fb]  
+[2019-03-11 16:37:35,026: INFO/MainProcess] Received task: src.tasks.verurl[696e694a-1f79-408d-8f92-2c364cfae5e3]  
+[2019-03-11 16:37:35,027: INFO/MainProcess] Received task: src.tasks.verurl[a45b35b1-3551-4a14-9f52-c0b7a2549721]  
+[2019-03-11 16:37:35,028: INFO/MainProcess] Received task: src.tasks.verurl[3f84ccbe-2407-4a8e-806a-f0d4bfd3228d]  
+[2019-03-11 16:37:35,040: INFO/MainProcess] Received task: src.tasks.verurl[14178aad-bd3d-4bad-a7f5-8e5fbfa27a7d]  
+[2019-03-11 16:37:35,041: INFO/MainProcess] Received task: src.tasks.verurl[20b2084b-d7d1-4014-8f59-0bd9cde4c3b6]  
+[2019-03-11 16:37:35,043: INFO/MainProcess] Received task: src.tasks.verurl[f1afcbed-a4ec-4535-abe8-8ed8f0d388fa]  
+[2019-03-12 01:00:00,061: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-03-12 18:12:52,418: INFO/ForkPoolWorker-3] Task src.tasks.verurl[ac72fe28-41f3-43eb-9992-a737f1c7c1df] succeeded in 533008.295008122s: None
+[2019-03-12 18:12:53,427: INFO/MainProcess] Received task: src.tasks.verurl[8c0b80ab-9ad4-457d-83f8-94f0b6222128]  
+[2019-03-13 01:00:00,072: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-03-14 01:00:00,075: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-03-15 01:00:00,046: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-03-16 01:00:00,047: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-03-17 01:00:00,090: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-03-17 20:59:54,473: INFO/ForkPoolWorker-2] Task src.tasks.verurl[f1afcbed-a4ec-4535-abe8-8ed8f0d388fa] succeeded in 534139.8615072817s: None
+[2019-03-17 20:59:54,619: INFO/MainProcess] Received task: src.tasks.verurl[8c0b80ab-9ad4-457d-83f8-94f0b6222128]  
+[2019-03-18 01:00:00,073: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-03-18 22:38:52,243: INFO/ForkPoolWorker-3] Task src.tasks.verurl[ac72fe28-41f3-43eb-9992-a737f1c7c1df] succeeded in 534359.8235155884s: None
+[2019-03-18 22:38:53,442: INFO/MainProcess] Received task: src.tasks.verurl[8c0b80ab-9ad4-457d-83f8-94f0b6222128]  
+[2019-03-18 22:38:53,444: INFO/MainProcess] Received task: src.tasks.verurl[43891621-f02a-422c-b263-e1fb4d55f0fb]  
+[2019-03-18 22:38:53,445: INFO/MainProcess] Received task: src.tasks.verurl[696e694a-1f79-408d-8f92-2c364cfae5e3]  
+[2019-03-18 22:38:53,446: INFO/MainProcess] Received task: src.tasks.verurl[a45b35b1-3551-4a14-9f52-c0b7a2549721]  
+[2019-03-18 22:38:53,447: INFO/MainProcess] Received task: src.tasks.verurl[3f84ccbe-2407-4a8e-806a-f0d4bfd3228d]  
+[2019-03-18 22:38:53,448: INFO/MainProcess] Received task: src.tasks.verurl[14178aad-bd3d-4bad-a7f5-8e5fbfa27a7d]  
+[2019-03-18 22:38:53,450: INFO/MainProcess] Received task: src.tasks.verurl[20b2084b-d7d1-4014-8f59-0bd9cde4c3b6]  
+[2019-03-18 22:38:53,451: INFO/MainProcess] Received task: src.tasks.verurl[f1afcbed-a4ec-4535-abe8-8ed8f0d388fa]  
+[2019-03-19 01:00:00,079: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-03-20 01:00:00,059: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-03-21 01:00:00,058: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-03-22 01:00:00,089: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-03-23 01:00:00,079: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-03-24 01:00:00,091: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-03-24 04:36:09,529: INFO/ForkPoolWorker-2] Task src.tasks.verurl[ac72fe28-41f3-43eb-9992-a737f1c7c1df] succeeded in 545775.0545221493s: None
+[2019-03-24 04:36:10,502: INFO/MainProcess] Received task: src.tasks.verurl[8c0b80ab-9ad4-457d-83f8-94f0b6222128]  
+[2019-03-24 04:36:10,503: INFO/MainProcess] Received task: src.tasks.verurl[43891621-f02a-422c-b263-e1fb4d55f0fb]  
+[2019-03-24 04:36:10,504: INFO/MainProcess] Received task: src.tasks.verurl[696e694a-1f79-408d-8f92-2c364cfae5e3]  
+[2019-03-24 04:36:10,505: INFO/MainProcess] Received task: src.tasks.verurl[a45b35b1-3551-4a14-9f52-c0b7a2549721]  
+[2019-03-24 04:36:10,507: INFO/MainProcess] Received task: src.tasks.verurl[3f84ccbe-2407-4a8e-806a-f0d4bfd3228d]  
+[2019-03-24 04:36:10,508: INFO/MainProcess] Received task: src.tasks.verurl[14178aad-bd3d-4bad-a7f5-8e5fbfa27a7d]  
+[2019-03-24 04:36:10,509: INFO/MainProcess] Received task: src.tasks.verurl[20b2084b-d7d1-4014-8f59-0bd9cde4c3b6]  
+[2019-03-24 04:36:10,510: INFO/MainProcess] Received task: src.tasks.verurl[f1afcbed-a4ec-4535-abe8-8ed8f0d388fa]  
+[2019-03-25 01:00:00,063: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-03-25 05:02:04,077: INFO/ForkPoolWorker-3] Task src.tasks.verurl[f1afcbed-a4ec-4535-abe8-8ed8f0d388fa] succeeded in 541391.8315390795s: None
+[2019-03-25 05:02:04,164: INFO/MainProcess] Received task: src.tasks.verurl[8c0b80ab-9ad4-457d-83f8-94f0b6222128]  
+[2019-03-26 01:00:00,068: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-03-27 01:00:00,090: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-03-28 01:00:00,044: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-03-29 01:00:00,017: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-03-30 01:00:00,091: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-03-30 14:05:51,547: INFO/ForkPoolWorker-2] Task src.tasks.verurl[f1afcbed-a4ec-4535-abe8-8ed8f0d388fa] succeeded in 552582.0159269739s: None
+[2019-03-30 14:05:51,892: INFO/MainProcess] Received task: src.tasks.verurl[8c0b80ab-9ad4-457d-83f8-94f0b6222128]  
+[2019-03-31 01:00:00,080: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-03-31 14:40:35,478: INFO/ForkPoolWorker-3] Task src.tasks.verurl[ac72fe28-41f3-43eb-9992-a737f1c7c1df] succeeded in 553111.3995220549s: None
+[2019-03-31 14:40:36,190: INFO/MainProcess] Received task: src.tasks.verurl[8c0b80ab-9ad4-457d-83f8-94f0b6222128]  
+[2019-03-31 14:40:36,192: INFO/MainProcess] Received task: src.tasks.verurl[43891621-f02a-422c-b263-e1fb4d55f0fb]  
+[2019-03-31 14:40:36,193: INFO/MainProcess] Received task: src.tasks.verurl[696e694a-1f79-408d-8f92-2c364cfae5e3]  
+[2019-03-31 14:40:36,194: INFO/MainProcess] Received task: src.tasks.verurl[a45b35b1-3551-4a14-9f52-c0b7a2549721]  
+[2019-03-31 14:40:36,196: INFO/MainProcess] Received task: src.tasks.verurl[3f84ccbe-2407-4a8e-806a-f0d4bfd3228d]  
+[2019-03-31 14:40:36,197: INFO/MainProcess] Received task: src.tasks.verurl[14178aad-bd3d-4bad-a7f5-8e5fbfa27a7d]  
+[2019-03-31 14:40:36,198: INFO/MainProcess] Received task: src.tasks.verurl[20b2084b-d7d1-4014-8f59-0bd9cde4c3b6]  
+[2019-03-31 14:40:36,199: INFO/MainProcess] Received task: src.tasks.verurl[f1afcbed-a4ec-4535-abe8-8ed8f0d388fa]  
+[2019-04-01 01:00:00,003: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-04-02 01:00:00,055: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-04-03 01:00:00,079: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-04-04 01:00:00,091: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-04-05 01:00:00,080: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-04-05 23:00:38,119: INFO/ForkPoolWorker-2] Task src.tasks.verurl[ac72fe28-41f3-43eb-9992-a737f1c7c1df] succeeded in 550486.569878554s: None
+[2019-04-05 23:00:39,947: INFO/MainProcess] Received task: src.tasks.verurl[8c0b80ab-9ad4-457d-83f8-94f0b6222128]  
+[2019-04-05 23:00:39,949: INFO/MainProcess] Received task: src.tasks.verurl[43891621-f02a-422c-b263-e1fb4d55f0fb]  
+[2019-04-05 23:00:39,950: INFO/MainProcess] Received task: src.tasks.verurl[696e694a-1f79-408d-8f92-2c364cfae5e3]  
+[2019-04-05 23:00:39,952: INFO/MainProcess] Received task: src.tasks.verurl[a45b35b1-3551-4a14-9f52-c0b7a2549721]  
+[2019-04-05 23:00:39,953: INFO/MainProcess] Received task: src.tasks.verurl[3f84ccbe-2407-4a8e-806a-f0d4bfd3228d]  
+[2019-04-05 23:00:39,954: INFO/MainProcess] Received task: src.tasks.verurl[14178aad-bd3d-4bad-a7f5-8e5fbfa27a7d]  
+[2019-04-05 23:00:39,955: INFO/MainProcess] Received task: src.tasks.verurl[20b2084b-d7d1-4014-8f59-0bd9cde4c3b6]  
+[2019-04-05 23:00:39,956: INFO/MainProcess] Received task: src.tasks.verurl[f1afcbed-a4ec-4535-abe8-8ed8f0d388fa]  
+[2019-04-06 01:00:00,091: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-04-07 01:00:00,061: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-04-07 03:02:48,290: INFO/ForkPoolWorker-3] Task src.tasks.verurl[f1afcbed-a4ec-4535-abe8-8ed8f0d388fa] succeeded in 562932.8098339178s: None
+[2019-04-07 03:02:49,284: INFO/MainProcess] Received task: src.tasks.verurl[8c0b80ab-9ad4-457d-83f8-94f0b6222128]  
+[2019-04-08 01:00:00,082: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-04-09 01:00:00,091: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-04-10 01:00:00,082: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-04-11 01:00:00,045: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-04-11 16:07:58,391: WARNING/MainProcess] consumer: Connection to broker lost. Trying to re-establish the connection...
+Traceback (most recent call last):
+  File "/root/.virtualenvs/dusksec/lib/python3.5/site-packages/redis/connection.py", line 392, in read_response
+    raise socket.error(SERVER_CLOSED_CONNECTION_ERROR)
+OSError: Connection closed by server.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/.virtualenvs/dusksec/lib/python3.5/site-packages/redis/client.py", line 2408, in _execute
+    return command(*args)
+  File "/root/.virtualenvs/dusksec/lib/python3.5/site-packages/redis/connection.py", line 624, in read_response
+    response = self._parser.read_response()
+  File "/root/.virtualenvs/dusksec/lib/python3.5/site-packages/redis/connection.py", line 403, in read_response
+    (e.args,))
+redis.exceptions.ConnectionError: Error while reading from socket: ('Connection closed by server.',)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/.virtualenvs/dusksec/lib/python3.5/site-packages/redis/connection.py", line 484, in connect
+    sock = self._connect()
+  File "/root/.virtualenvs/dusksec/lib/python3.5/site-packages/redis/connection.py", line 541, in _connect
+    raise err
+  File "/root/.virtualenvs/dusksec/lib/python3.5/site-packages/redis/connection.py", line 529, in _connect
+    sock.connect(socket_address)
+OSError: [Errno 113] No route to host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/.virtualenvs/dusksec/lib/python3.5/site-packages/celery/worker/consumer/consumer.py", line 317, in start
+    blueprint.start(self)
+  File "/root/.virtualenvs/dusksec/lib/python3.5/site-packages/celery/bootsteps.py", line 119, in start
+    step.start(parent)
+  File "/root/.virtualenvs/dusksec/lib/python3.5/site-packages/celery/worker/consumer/consumer.py", line 593, in start
+    c.loop(*c.loop_args())
+  File "/root/.virtualenvs/dusksec/lib/python3.5/site-packages/celery/worker/loops.py", line 91, in asynloop
+    next(loop)
+  File "/root/.virtualenvs/dusksec/lib/python3.5/site-packages/kombu/asynchronous/hub.py", line 354, in create_loop
+    cb(*cbargs)
+  File "/root/.virtualenvs/dusksec/lib/python3.5/site-packages/kombu/transport/redis.py", line 1040, in on_readable
+    self.cycle.on_readable(fileno)
+  File "/root/.virtualenvs/dusksec/lib/python3.5/site-packages/kombu/transport/redis.py", line 337, in on_readable
+    chan.handlers[type]()
+  File "/root/.virtualenvs/dusksec/lib/python3.5/site-packages/kombu/transport/redis.py", line 667, in _receive
+    ret.append(self._receive_one(c))
+  File "/root/.virtualenvs/dusksec/lib/python3.5/site-packages/kombu/transport/redis.py", line 678, in _receive_one
+    response = c.parse_response()
+  File "/root/.virtualenvs/dusksec/lib/python3.5/site-packages/redis/client.py", line 2430, in parse_response
+    return self._execute(connection, connection.read_response)
+  File "/root/.virtualenvs/dusksec/lib/python3.5/site-packages/redis/client.py", line 2415, in _execute
+    connection.connect()
+  File "/root/.virtualenvs/dusksec/lib/python3.5/site-packages/redis/connection.py", line 489, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 113 connecting to localhost:6379. No route to host.
+[2019-04-11 16:07:58,674: WARNING/MainProcess] Restoring 8 unacknowledged message(s)
+[2019-04-11 16:07:58,689: INFO/MainProcess] Connected to redis://:**@localhost:6379/1
+[2019-04-11 16:07:58,697: INFO/MainProcess] mingle: searching for neighbors
+[2019-04-11 16:07:59,701: INFO/MainProcess] mingle: all alone
+[2019-04-11 16:07:59,829: INFO/MainProcess] Received task: src.tasks.verurl[8c0b80ab-9ad4-457d-83f8-94f0b6222128]  
+[2019-04-11 16:07:59,831: INFO/MainProcess] Received task: src.tasks.verurl[43891621-f02a-422c-b263-e1fb4d55f0fb]  
+[2019-04-11 16:07:59,833: INFO/MainProcess] Received task: src.tasks.verurl[696e694a-1f79-408d-8f92-2c364cfae5e3]  
+[2019-04-11 16:07:59,834: INFO/MainProcess] Received task: src.tasks.verurl[a45b35b1-3551-4a14-9f52-c0b7a2549721]  
+[2019-04-11 16:07:59,836: INFO/MainProcess] Received task: src.tasks.verurl[3f84ccbe-2407-4a8e-806a-f0d4bfd3228d]  
+[2019-04-11 16:07:59,837: INFO/MainProcess] Received task: src.tasks.verurl[14178aad-bd3d-4bad-a7f5-8e5fbfa27a7d]  
+[2019-04-11 16:07:59,838: INFO/MainProcess] Received task: src.tasks.verurl[20b2084b-d7d1-4014-8f59-0bd9cde4c3b6]  
+[2019-04-11 16:07:59,839: INFO/MainProcess] Received task: src.tasks.verurl[f1afcbed-a4ec-4535-abe8-8ed8f0d388fa]  
+[2019-04-12 01:00:00,087: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-04-12 08:27:41,360: INFO/ForkPoolWorker-2] Task src.tasks.verurl[f1afcbed-a4ec-4535-abe8-8ed8f0d388fa] succeeded in 552423.238954233s: None
+[2019-04-12 08:27:41,636: INFO/MainProcess] Received task: src.tasks.verurl[8c0b80ab-9ad4-457d-83f8-94f0b6222128]  
+[2019-04-13 01:00:00,073: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-04-13 11:50:02,219: INFO/ForkPoolWorker-3] Task src.tasks.verurl[ac72fe28-41f3-43eb-9992-a737f1c7c1df] succeeded in 550033.927917216s: None
+[2019-04-13 11:50:04,145: INFO/MainProcess] Received task: src.tasks.verurl[8c0b80ab-9ad4-457d-83f8-94f0b6222128]  
+[2019-04-13 11:50:04,146: INFO/MainProcess] Received task: src.tasks.verurl[43891621-f02a-422c-b263-e1fb4d55f0fb]  
+[2019-04-14 01:00:00,073: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-04-15 01:00:00,060: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-04-16 01:00:00,067: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-04-17 01:00:00,033: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-04-18 01:00:00,062: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-04-18 18:48:14,014: INFO/ForkPoolWorker-2] Task src.tasks.verurl[8c0b80ab-9ad4-457d-83f8-94f0b6222128] succeeded in 555632.6529716905s: None
+[2019-04-18 18:48:15,303: INFO/MainProcess] Received task: src.tasks.verurl[8c0b80ab-9ad4-457d-83f8-94f0b6222128]  
+[2019-04-18 18:48:15,305: INFO/MainProcess] Received task: src.tasks.verurl[43891621-f02a-422c-b263-e1fb4d55f0fb]  
+[2019-04-18 18:48:15,306: INFO/MainProcess] Received task: src.tasks.verurl[696e694a-1f79-408d-8f92-2c364cfae5e3]  
+[2019-04-19 01:00:00,085: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-04-19 22:05:06,696: INFO/ForkPoolWorker-3] Task src.tasks.verurl[43891621-f02a-422c-b263-e1fb4d55f0fb] succeeded in 555304.4755828213s: None
+[2019-04-19 22:05:07,971: INFO/MainProcess] Received task: src.tasks.verurl[8c0b80ab-9ad4-457d-83f8-94f0b6222128]  
+[2019-04-19 22:05:07,973: INFO/MainProcess] Received task: src.tasks.verurl[43891621-f02a-422c-b263-e1fb4d55f0fb]  
+[2019-04-19 22:05:07,974: INFO/MainProcess] Received task: src.tasks.verurl[696e694a-1f79-408d-8f92-2c364cfae5e3]  
+[2019-04-19 22:05:07,976: INFO/MainProcess] Received task: src.tasks.verurl[a45b35b1-3551-4a14-9f52-c0b7a2549721]  
+[2019-04-20 01:00:00,084: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-04-21 01:00:00,084: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-04-22 01:00:00,084: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-04-23 01:00:00,083: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-04-24 01:00:00,085: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-04-25 01:00:00,084: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-04-25 05:03:30,586: INFO/ForkPoolWorker-2] Task src.tasks.verurl[696e694a-1f79-408d-8f92-2c364cfae5e3] succeeded in 555316.5713997018s: None
+[2019-04-25 05:03:31,406: INFO/MainProcess] Received task: src.tasks.verurl[8c0b80ab-9ad4-457d-83f8-94f0b6222128]  
+[2019-04-25 05:03:31,408: INFO/MainProcess] Received task: src.tasks.verurl[43891621-f02a-422c-b263-e1fb4d55f0fb]  
+[2019-04-25 05:03:31,409: INFO/MainProcess] Received task: src.tasks.verurl[696e694a-1f79-408d-8f92-2c364cfae5e3]  
+[2019-04-25 05:03:31,410: INFO/MainProcess] Received task: src.tasks.verurl[a45b35b1-3551-4a14-9f52-c0b7a2549721]  
+[2019-04-25 05:03:31,411: INFO/MainProcess] Received task: src.tasks.verurl[3f84ccbe-2407-4a8e-806a-f0d4bfd3228d]  
+[2019-04-26 01:00:00,084: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-04-26 11:10:40,414: INFO/ForkPoolWorker-3] Task src.tasks.verurl[a45b35b1-3551-4a14-9f52-c0b7a2549721] succeeded in 565533.7179758362s: None
+[2019-04-26 11:10:41,501: INFO/MainProcess] Received task: src.tasks.verurl[8c0b80ab-9ad4-457d-83f8-94f0b6222128]  
+[2019-04-26 11:10:41,502: INFO/MainProcess] Received task: src.tasks.verurl[43891621-f02a-422c-b263-e1fb4d55f0fb]  
+[2019-04-26 11:10:41,504: INFO/MainProcess] Received task: src.tasks.verurl[696e694a-1f79-408d-8f92-2c364cfae5e3]  
+[2019-04-26 11:10:41,505: INFO/MainProcess] Received task: src.tasks.verurl[a45b35b1-3551-4a14-9f52-c0b7a2549721]  
+[2019-04-26 11:10:41,507: INFO/MainProcess] Received task: src.tasks.verurl[3f84ccbe-2407-4a8e-806a-f0d4bfd3228d]  
+[2019-04-26 11:10:41,509: INFO/MainProcess] Received task: src.tasks.verurl[14178aad-bd3d-4bad-a7f5-8e5fbfa27a7d]  
+[2019-04-27 01:00:00,089: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-04-28 01:00:00,084: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-04-29 01:00:00,076: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-04-30 01:00:00,084: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-05-01 01:00:00,084: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-05-01 19:12:39,535: INFO/ForkPoolWorker-2] Task src.tasks.verurl[3f84ccbe-2407-4a8e-806a-f0d4bfd3228d] succeeded in 569348.9489282984s: None
+[2019-05-01 19:12:39,571: INFO/MainProcess] Received task: src.tasks.verurl[8c0b80ab-9ad4-457d-83f8-94f0b6222128]  
+[2019-05-01 19:12:39,572: INFO/MainProcess] Received task: src.tasks.verurl[43891621-f02a-422c-b263-e1fb4d55f0fb]  
+[2019-05-01 19:12:39,573: INFO/MainProcess] Received task: src.tasks.verurl[696e694a-1f79-408d-8f92-2c364cfae5e3]  
+[2019-05-01 19:12:39,575: INFO/MainProcess] Received task: src.tasks.verurl[a45b35b1-3551-4a14-9f52-c0b7a2549721]  
+[2019-05-01 19:12:39,576: INFO/MainProcess] Received task: src.tasks.verurl[3f84ccbe-2407-4a8e-806a-f0d4bfd3228d]  
+[2019-05-01 19:12:39,577: INFO/MainProcess] Received task: src.tasks.verurl[14178aad-bd3d-4bad-a7f5-8e5fbfa27a7d]  
+[2019-05-01 19:12:39,578: INFO/MainProcess] Received task: src.tasks.verurl[20b2084b-d7d1-4014-8f59-0bd9cde4c3b6]  
+[2019-05-02 01:00:00,083: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-05-02 22:11:20,895: INFO/ForkPoolWorker-3] Task src.tasks.verurl[14178aad-bd3d-4bad-a7f5-8e5fbfa27a7d] succeeded in 558040.479538586s: None
+[2019-05-02 22:11:22,415: INFO/MainProcess] Received task: src.tasks.verurl[8c0b80ab-9ad4-457d-83f8-94f0b6222128]  
+[2019-05-02 22:11:22,416: INFO/MainProcess] Received task: src.tasks.verurl[43891621-f02a-422c-b263-e1fb4d55f0fb]  
+[2019-05-02 22:11:22,417: INFO/MainProcess] Received task: src.tasks.verurl[696e694a-1f79-408d-8f92-2c364cfae5e3]  
+[2019-05-02 22:11:22,419: INFO/MainProcess] Received task: src.tasks.verurl[a45b35b1-3551-4a14-9f52-c0b7a2549721]  
+[2019-05-02 22:11:22,420: INFO/MainProcess] Received task: src.tasks.verurl[3f84ccbe-2407-4a8e-806a-f0d4bfd3228d]  
+[2019-05-02 22:11:22,421: INFO/MainProcess] Received task: src.tasks.verurl[14178aad-bd3d-4bad-a7f5-8e5fbfa27a7d]  
+[2019-05-02 22:11:22,423: INFO/MainProcess] Received task: src.tasks.verurl[20b2084b-d7d1-4014-8f59-0bd9cde4c3b6]  
+[2019-05-02 22:11:22,424: INFO/MainProcess] Received task: src.tasks.verurl[f1afcbed-a4ec-4535-abe8-8ed8f0d388fa]  
+[2019-05-03 01:00:00,062: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-05-04 01:00:00,084: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-05-05 01:00:00,065: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-05-06 01:00:00,089: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-05-07 01:00:00,088: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-05-08 01:00:00,089: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-05-08 10:52:57,628: INFO/ForkPoolWorker-2] Task src.tasks.verurl[20b2084b-d7d1-4014-8f59-0bd9cde4c3b6] succeeded in 574818.0915025324s: None
+[2019-05-08 10:52:58,521: INFO/MainProcess] Received task: src.tasks.verurl[8c0b80ab-9ad4-457d-83f8-94f0b6222128]  
+[2019-05-09 01:00:00,090: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-05-09 11:42:32,442: INFO/ForkPoolWorker-3] Task src.tasks.verurl[f1afcbed-a4ec-4535-abe8-8ed8f0d388fa] succeeded in 567071.5467195641s: None
+[2019-05-09 11:42:33,238: INFO/MainProcess] Received task: src.tasks.verurl[8c0b80ab-9ad4-457d-83f8-94f0b6222128]  
+[2019-05-10 01:00:00,086: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-05-11 01:00:00,091: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-05-12 01:00:00,087: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-05-13 01:00:00,086: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-05-14 01:00:00,061: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-05-15 00:00:00,382: INFO/ForkPoolWorker-2] Task src.tasks.verurl[8c0b80ab-9ad4-457d-83f8-94f0b6222128] succeeded in 565622.7538398355s: None
+[2019-05-15 00:00:00,975: INFO/MainProcess] Received task: src.tasks.verurl[8c0b80ab-9ad4-457d-83f8-94f0b6222128]  
+[2019-05-15 00:00:00,977: INFO/MainProcess] Received task: src.tasks.verurl[43891621-f02a-422c-b263-e1fb4d55f0fb]  
+[2019-05-15 01:00:00,084: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-05-16 01:00:00,085: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-05-16 03:13:50,483: INFO/ForkPoolWorker-3] Task src.tasks.verurl[8c0b80ab-9ad4-457d-83f8-94f0b6222128] succeeded in 574278.0407970864s: None
+[2019-05-16 03:13:51,895: INFO/MainProcess] Received task: src.tasks.verurl[8c0b80ab-9ad4-457d-83f8-94f0b6222128]  
+[2019-05-17 01:00:00,085: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)
+[2019-05-18 01:00:00,085: INFO/Beat] Scheduler: Sending due task verurl (src.tasks.verurl)

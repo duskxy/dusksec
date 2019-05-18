@@ -29,7 +29,7 @@ SECRET_KEY = 'wkud-jmb6$%597c0-__nh(neook79egxj8@a86d=q=0q289(*7'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["154.8.196.249"]
+ALLOWED_HOSTS = ["154.8.196.249","dusksec.exinyijiu.com"]
 
 
 # Application definition
